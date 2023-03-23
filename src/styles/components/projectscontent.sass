@@ -1,0 +1,69 @@
+@use '../variables'
+@use '../mixins'
+    
+#project-content
+    background-color: variables.$bg-color
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    .cards 
+        display: flex
+        flex-wrap: wrap
+        padding-bottom: 2em
+        gap: 1rem
+
+    .project-card
+        text-align: center
+        width: 45%
+        border: 2px solid #fff
+        border-radius: 8px
+        padding: .8rem .9rem
+        background: variables.$bg-color-secondary
+        height: 320px
+        
+
+    img
+        width: 80%
+        border-radius: 8px
+        
+
+    h3
+        color: #fff
+        margin-bottom: .8rem
+        margin-top: .5rem
+        gap: 1rem
+        
+
+    p
+        color: #fff
+        margin-bottom: .8rem
+
+    span 
+        color: #fff
+        font-weight: bold
+
+    .icons
+        display: flex
+        justify-content: center
+        gap: 8px
+
+        svg
+            font-size: 22px
+
+        #ts
+            color: #3178c6
+        
+        #react
+            color: #61dafb
+
+        #js
+            color:#FFFF00
+        
+        
+
+    .btn 
+        @include mixins.btn
+        align-self: start
+
+     
