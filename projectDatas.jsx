@@ -10,6 +10,7 @@ import imgAstro from './src/img/quiz-astro.png';
 import imgWeather from './src/img/weather-app.png';
 import imgCalculator from './src/img/calculadora-treinamento.png';
 import imgApiGitHub from './src/img/api-github.png';
+import imgMovieTmdb from './src/img/movie-tmdb.png';
 
 export const projectDatas = [
     {id: 0, name: "Secret Word", description: "Descubra a palavra secreta!", tech: "React", 
@@ -35,5 +36,8 @@ export const projectDatas = [
     },
     {id: 7, name: "GitHub API", description: "Consulte o repositório de usuários!", tech: "React", 
     icon: <SiReact id='react' /> , link: "https://api-github-self.vercel.app/", img: imgApiGitHub
+    },
+    {id: 8, name: "Movie TMDB", description: "Consulte os melhores filmes!", tech: "React", 
+    icon: <SiReact id='react' /> , link: "https://movie-tmdb-zeta.vercel.app/", img: imgMovieTmdb
     },  
 ]
