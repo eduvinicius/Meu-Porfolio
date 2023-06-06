@@ -7,6 +7,19 @@
     border-radius: variables.$container-border-radius
     padding: 3rem
 
+
+    .scroll
+        height: 500px
+        overflow-y: auto
+        margin-bottom: 3em
+
+        &::-webkit-scrollbar 
+            width: 10px
+
+        &::-webkit-scrollbar-thumb
+            background-color: #FFF
+            border-radius: 10px
+
     .cards 
         display: flex
         flex-wrap: wrap
@@ -66,4 +79,14 @@
         @include mixins.btn
         align-self: start
 
-     
+@media (max-width: 700px) 
+
+    #project-content
+        width: 100%
+
+        .scroll
+            width: 100%
+
+        .project-card
+            width: 100%
+            

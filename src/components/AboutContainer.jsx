@@ -5,10 +5,8 @@ const AboutContainer = () => {
     <section className="about-container">
       <h2>Sobre</h2>
       <p>
-        Olá! Meu nome é Eduardo Vinicius e eu tenho 31 anos. Atualmente estou à procura de uma nova
-        oportunidade no mercado de trabalho! Estou saindo da área da Educação física e estou migrando
-        para o mercado de Desenvolvimento de Software. Atualmente estou cursando Análise e Desenvolvimento
-        de sistemas e estou no quarto semestre.
+        Olá! Meu nome é Eduardo Vinicius e eu tenho 31 anos. Atualmente sou desenvolvedor Front-end e trabalho
+        com Angular.
       </p>
       <p>
         Esta é a minha página de portfólios. Espero que gostem dos projetos que criei. Aceito qualquer tipo de 

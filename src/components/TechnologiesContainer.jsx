@@ -2,20 +2,25 @@ import {
   DiHtml5,
   DiCss3,
   DiJsBadge,
-  DiNodejsSmall,
-  DiMysql,
-  DiReact
+  DiSass,
+  DiAngularSimple,
+  DiReact,
+  DiNodejsSmall
 } from 'react-icons/di'
+
+import { SiTypescript } from 'react-icons/si';
 
 import '../styles/components/technologiescontainer.sass';
 
 const technologies = [
-  { id: "html", name: "HTML5", icon: <DiHtml5 />, info: "Tags Básicas, Meta Tags"},
-  { id: "css", name: "CSS3", icon: <DiCss3 />, info: "Flexbox, Conceitos básicos"},
-  { id: "js", name: "JavaScript", icon: <DiJsBadge />, info: "Objetos, Classes, Polimorfismo, Herança"},
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall />, info: "Express, Api, Banco de Dados"},
-  { id: "mysql", name: "MySQL", icon: <DiMysql />, info: "CRUD, SQL"},
-  { id: "react", name: "React", icon: <DiReact />, info: "Redux, Context, Hooks"},
+  { id: "html", name: "HTML5", icon: <DiHtml5 /> },
+  { id: "css", name: "CSS3", icon: <DiCss3 /> },
+  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
+  { id: "sass", name: "SASS", icon: <DiSass /> },
+  { id: "angular", name: "Angular", icon: <DiAngularSimple /> },
+  { id: "react", name: "React", icon: <DiReact />},
+  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
+  { id: "ts", name: "TypeScript", icon: <SiTypescript /> },
 ];
 
 const TechnologiesContainer = () => {
@@ -26,12 +31,7 @@ const TechnologiesContainer = () => {
         {technologies.map((tech) => (
           <div className="technology-card" id={tech.id} key={tech.id}>
             {tech.icon}
-            <div className="technology-info">
-              <h3>{tech.name}</h3>
-              <p>
-                {tech.info}
-              </p>
-            </div>
+            <h3>{tech.name}</h3>
           </div>
         ))}
       </div>
