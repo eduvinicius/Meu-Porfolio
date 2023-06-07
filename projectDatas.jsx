@@ -1,4 +1,4 @@
-import { SiReact, SiJavascript, SiTypescript } from 'react-icons/si';
+import { SiReact, SiJavascript, SiTypescript, SiAngular } from 'react-icons/si';
 
 import {v4 as uuidv4} from 'uuid';
 
@@ -11,6 +11,8 @@ import imgWeather from './src/img/weather-app.png';
 import imgCalculator from './src/img/calculadora-treinamento.png';
 import imgApiGitHub from './src/img/api-github.png';
 import imgMovieTmdb from './src/img/movie-tmdb.png';
+import imgSolarSystem from './src/img/solar-system.png';
+import imgTibiaAPI from './src/img/tibia-api.png';
 
 export const projectDatas = [
     {id: 0, name: "Secret Word", description: "Descubra a palavra secreta!", tech: "React", 
@@ -32,12 +34,20 @@ export const projectDatas = [
         icon: <SiJavascript id='js' /> , link: "https://weather-api-pied.vercel.app/", img: imgWeather
     },
     {id: 6, name: "Calculadora Treinamento", description: "Calculo de Vo2, volume de treino e AF!", tech: "React", 
-    icon: <SiReact id='react' /> , link: "https://calculadora-treinamento.vercel.app/", img: imgCalculator
+        icon: <SiReact id='react' /> , link: "https://calculadora-treinamento.vercel.app/", img: imgCalculator
     },
     {id: 7, name: "GitHub API", description: "Consulte o repositório de usuários!", tech: "React", 
-    icon: <SiReact id='react' /> , link: "https://api-github-self.vercel.app/", img: imgApiGitHub
+        icon: <SiReact id='react' /> , link: "https://api-github-self.vercel.app/", img: imgApiGitHub
     },
     {id: 8, name: "Movie TMDB", description: "Consulte os melhores filmes!", tech: "React", 
-    icon: <SiReact id='react' /> , link: "https://movie-tmdb-zeta.vercel.app/", img: imgMovieTmdb
+        icon: <SiReact id='react' /> , link: "https://movie-tmdb-zeta.vercel.app/", img: imgMovieTmdb
+    },  
+    {id: 9, name: "Sistema Solar", description: "Saiba tudo sobre o Sistema Solar!", tech: "Angular", 
+        icon: <SiAngular id='angular' /> , link: "https://solar-system-beta-henna.vercel.app/home", 
+        img: imgSolarSystem
+    },  
+    {id: 10, name: "Tibia API", description: "Consulte informações sobre o Tibia!", tech: "Angular", 
+        icon: <SiAngular id='angular' /> , link: "https://tibia-api.vercel.app/inicio", 
+        img: imgTibiaAPI
     },  
 ]
